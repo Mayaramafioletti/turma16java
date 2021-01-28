@@ -1,6 +1,8 @@
+package java1;
+
 import java.util.Scanner;
 
-public class exercicio2java1 {
+public class exercício2 {
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);
 		int idade,anos,meses,dias;
@@ -13,6 +15,5 @@ public class exercicio2java1 {
 		dias = (idade%365)%30;
 		
 		System.out.println("Sua idade é "+anos+" anos, "+meses+" meses e "+dias+" dias!");
-		
 	}
 }

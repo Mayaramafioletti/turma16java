@@ -1,6 +1,8 @@
+package java1;
+
 import java.util.Scanner;
 
-public class exercicio5java1 {
+public class exercício5 {
 	public static void main(String[] args) {
 		double nota1, nota2, nota3;
 		Scanner ler = new Scanner(System.in);
@@ -14,4 +16,3 @@ public class exercicio5java1 {
 		
 	}
 }
-

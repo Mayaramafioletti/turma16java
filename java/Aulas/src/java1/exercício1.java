@@ -1,7 +1,7 @@
-
+package java1;
 import java.util.Scanner;
+public class exercício1 {
 
-public class Exercicio1java1 {
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);
 		int anos, meses, dias, resultado1, resultado2;
@@ -20,3 +20,5 @@ public class Exercicio1java1 {
 	
 	}
 }
+
+

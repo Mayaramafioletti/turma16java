@@ -1,6 +1,8 @@
+package java1;
+
 import java.util.Scanner;
 
-public class exercicio3java1 {
+public class exercício3 {
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);
 		int tempo;

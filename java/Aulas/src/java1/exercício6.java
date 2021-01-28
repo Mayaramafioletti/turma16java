@@ -1,7 +1,8 @@
-import java.util.Scanner;
-import java.math.*;
+package java1;
 
-public class exercicio6java1 {
+import java.util.Scanner;
+
+public class exercício6 {
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);
 		double x1,x2,y1,y2,d,valor;

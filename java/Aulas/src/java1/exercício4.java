@@ -1,7 +1,8 @@
-import java.math.*;
+package java1;
+
 import java.util.Scanner;
 
-public class exercicio4java1 {
+public class exercício4 {
 	public static void main(String[] args) {
 		int a,b,c;
 		double r,s,d;
