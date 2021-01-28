@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class parOUimpar {
+public class ParouImpar {
 	public static void main(String[] args) {
 		int numero;
 		Scanner ler = new Scanner(System.in);
