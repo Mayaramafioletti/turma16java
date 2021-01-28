@@ -36,7 +36,7 @@ public class Banco {
 		}while(continuar=='s' || continuar == 's');
 		do{
 			saldo+=limite;
-			System.out.println("O seu saldo é de "+saldo);
+			System.out.println("Ok, agora vamos falar sobre se limite especial.\nO seu saldo é de "+saldo);
 			
 			System.out.print("Você deseja usar seu limite? S/N ");
 			opcao = ler.next().charAt(0);
@@ -54,14 +54,15 @@ public class Banco {
 					System.out.print("Você deseja recomeçar? S/N ");
 					recomecar = ler.next().charAt(0);
 				}
-			}
+			
 				else {
 					
 					System.out.printf("Ok, obrigada! Você está usando R$%.2f do seu limite especial, então seu saldo agora é de R$%.2f", limite, saldo+limite);
 					System.out.print("\nDesejar usar o limite novamente?");
 					recomecar = ler.next().charAt(0);
 				}
-		}while(recomecar=='s' || recomecar=='S');
+			}
+			}while(recomecar=='s' || recomecar=='S');
 		
 		System.out.println("Obrigada por usar nossos serviços!");
 		
