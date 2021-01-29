@@ -2,41 +2,47 @@ import java.util.Scanner;
 
 public class Banco {
 	public static void main(String[] args) {
+		double total=0, limite=0, soma=0, valor = 0;
+		char opcao, recomecar = 's', debtar= 'd', continuar ;
 		Scanner ler = new Scanner(System.in);
-		double saldo=0, limite=0, soma=0, valor = 0;
-		char opcao, recomecar = 's', debtar= 'd', continuar = 's';
-		
 		
 		System.out.println("\nVocê selecionou a conta especial.");
-		do {
-			System.out.println("Você deseja D - debtar ou C - creditar o valor da conta?");
-			debtar = ler.next().charAt(0);
-			if(debtar=='D' || debtar=='d') {
-				System.out.println("Qual o valor?");
-				valor = ler.nextDouble();
-				saldo += valor;
-			}
-			else if(debtar=='C' || debtar=='c') {
-				System.out.println("Qual o valor?");
-				valor = ler.nextDouble();
-				saldo -= valor;	
-			}
-			else {
-				System.out.println("Resposta não reconhecida. Deseja recomeçar? S/N");
-				continuar = ler.next().charAt(0);
-			}
-			if(saldo<0) {
-				System.out.println("Saldo negativo. Deseja recomeçar? S/N");
-				continuar = ler.next().charAt(0);
-			}
-			else {
-			System.out.printf("Ok, seu saldo é %.2f. Deseja parar? S/N", saldo);
-			continuar = ler.next().charAt(0);
-			}
-		}while(continuar=='s' || continuar == 's');
+		for(int giro=0; giro<10; giro++) {
+			do {
+				System.out.println("Você deseja D - debtar ou C - creditar o valor da conta?");
+				debtar = ler.next().charAt(0);
+				if(debtar=='C' || debtar=='c') {
+					System.out.println("Qual o valor?");
+					valor = ler.nextDouble();
+					total += valor;
+				}
+				else if(debtar=='D' || debtar=='d') {
+					System.out.println("Qual o valor?");
+					valor = ler.nextDouble();
+					total -= valor;	
+				}
+				else {
+					System.out.println("Resposta não reconhecida. Deseja recomeçar? S/N");
+					continuar = ler.next().charAt(0);
+				}
+				if(total<0) {
+					System.out.print("Saldo negativo. Deseja recomeçar? S/N ");
+					continuar = ler.next().charAt(0);
+				}
+				else {
+					System.out.printf("Ok, seu saldo é %.2f. Deseja parar? S/N ", total);
+					continuar = ler.next().charAt(0);
+					
+				}
+			}while(continuar=='s' || continuar == 'S');  //dando erro
+			if (continuar == 'N')
+					{
+						break;
+					}
+		}
 		do{
-			saldo+=limite;
-			System.out.println("Ok, agora vamos falar sobre se limite especial.\nO seu saldo é de "+saldo);
+			total+=limite;
+			System.out.println("Ok, agora vamos falar sobre se limite especial.\nO seu saldo é de "+total);
 			
 			System.out.print("Você deseja usar seu limite? S/N ");
 			opcao = ler.next().charAt(0);
@@ -56,8 +62,7 @@ public class Banco {
 				}
 			
 				else {
-					
-					System.out.printf("Ok, obrigada! Você está usando R$%.2f do seu limite especial, então seu saldo agora é de R$%.2f", limite, saldo+limite);
+					System.out.printf("Ok, obrigada! Você está usando R$%.2f do seu limite especial, então seu saldo agora é de R$%.2f", limite, total+limite);
 					System.out.print("\nDesejar usar o limite novamente?");
 					recomecar = ler.next().charAt(0);
 				}
@@ -65,6 +70,5 @@ public class Banco {
 			}while(recomecar=='s' || recomecar=='S');
 		
 		System.out.println("Obrigada por usar nossos serviços!");
-		
 	}
 }
