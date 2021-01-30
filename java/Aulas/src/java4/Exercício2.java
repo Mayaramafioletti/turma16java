@@ -17,20 +17,21 @@ public class Exercício2 {
 			valor[i] = gerador.nextInt(7);
 			total += valor[i];
 			media = total/TAMANHO;
-			if(valor[i]>=maiorValor) {
-				if(maiorValor == valor[i]) {
-					contador++;
-				}
-				else {
-					contador=1;
-				}
+			if (valor[i]>maiorValor)
+			{
+				contador = 0;
+				maiorValor = valor[i];
+			}
+			if (valor[i]==maiorValor)
+			{
+				contador++;
 			}
 		}
 			for(int x=0; x<TAMANHO; x++) {
-				System.out.println("O "+(x+1)+"º lançamento apareceu "+valor[x]+"\n");
+				System.out.print("O "+(x+1)+"º lançamento apareceu "+valor[x]+"\n");
 			}
-			System.out.println("A média é "+media+"\n");
-			System.out.println("O maior valor é "+maiorValor+" e ele aparece"+contador+" vezes");
+			System.out.print("\nA média é "+media+"\n");
+			System.out.print("\nO maior valor é "+maiorValor+" e ele aparece "+contador+" vezes");
 		}
 	}
 

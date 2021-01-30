@@ -15,7 +15,7 @@ public class Exercício4 {
 				if(linha==coluna){
 					soma+=cubo[linha][coluna];
 				}
-				System.out.println(cubo[linha][coluna]+" ");
+				System.out.print(cubo[linha][coluna]+" ");
 			}
 			System.out.println("\n");
 		}

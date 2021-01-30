@@ -26,7 +26,7 @@ public class Exercício3 {
 		for(l=0;l<TAMANHOLINHA;l++){
 			for(c=0;c<TAMANHOCOLUNA;c++){
 				n2[l][c]= gerador.nextInt(10);
-				System.out.println(n2[l][c]+" ");
+				System.out.print(n2[l][c]+" ");
 			}
 			System.out.println("\n");
 		}
@@ -35,7 +35,7 @@ public class Exercício3 {
 		for(l=0;l<TAMANHOLINHA;l++){
 			for(c=0;c<TAMANHOCOLUNA;c++){
 				m1[l][c] = n1[l][c] + n2[l][c];
-				System.out.println(m1[l][c]+" ");
+				System.out.print(m1[l][c]+" ");
 			}
 			System.out.println("\n");
 		}
@@ -43,7 +43,7 @@ public class Exercício3 {
 		for(l=0;l<TAMANHOLINHA;l++){
 			for(c=0;c<TAMANHOCOLUNA;c++){
 				m2[l][c] = n1[l][c] - n2[l][c];
-				System.out.println(m2[l][c]+" ");
+				System.out.print(m2[l][c]+" ");
 			}
 			System.out.println("\n");
 		}
