@@ -1,3 +1,4 @@
+package ExerciciosAula;
 import java.util.Scanner;
 
 public class ParouImpar {

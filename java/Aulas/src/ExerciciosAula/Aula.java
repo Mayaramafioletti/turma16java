@@ -1,3 +1,4 @@
+package ExerciciosAula;
 
 public class Aula {
 		//OBJETIVO DA CLASSE -
