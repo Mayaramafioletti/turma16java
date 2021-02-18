@@ -1,14 +1,12 @@
-package com.helloworld.hello; //classe de inicialização
+package org.generation.blogPessoal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HelloApplication {
+public class BlogPessoalApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HelloApplication.class, args);
+		SpringApplication.run(BlogPessoalApplication.class, args);
 	}
-
 }
-//classe que fica mais limpa possivel 

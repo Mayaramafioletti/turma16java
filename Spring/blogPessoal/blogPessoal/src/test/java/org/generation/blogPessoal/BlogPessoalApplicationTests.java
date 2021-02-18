@@ -1,10 +1,10 @@
-package com.helloworld.hello; //onde serão feito os testes
+package org.generation.blogPessoal;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HelloApplicationTests {
+class BlogPessoalApplicationTests {
 
 	@Test
 	void contextLoads() {
