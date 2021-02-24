@@ -5,9 +5,6 @@ Neste repositório poderá encontrar alguns exercicíos feitos no bootcamp da Ge
 Alguns aprendizados que tive podem ser encontrados aqui:
 
 *Portugol
-
 *Java
-
 *Spring
-
 *MySQL
