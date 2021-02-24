@@ -4,7 +4,13 @@ Neste repositório poderá encontrar alguns exercicíos feitos no bootcamp da Ge
 
 Alguns aprendizados que tive podem ser encontrados aqui:
 
-*Portugol
+
+<h1 align="center">
+    <a href="https://github.com/Mayaramafioletti/turma16java/tree/main/portugol">🔗 Portugol</a>
+</h1>
+<p align="center">🚀 Aprendizados de Portugol</p>
+🔗 Portugol
+
 
 *Java
 
