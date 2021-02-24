@@ -1,4 +1,4 @@
-<h1 align="center"> ###🚀 turma16java 🚀</h1>
+<h1 align="center"> 🚀 turma16java 🚀</h1>
 
 
 Neste repositório poderá encontrar alguns exercicíos feitos no bootcamp da Generetion Brasil.
